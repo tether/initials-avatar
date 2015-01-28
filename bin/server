@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+var config = require('config');
+require('express')()
+  .use('/', require('../app'))
+  .listen(config.port, function () { console.log('👍  Running…'); });
