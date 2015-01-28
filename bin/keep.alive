@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+curl -I https://pf-initials-avatar.herokuapp.com/Keep%20Alive
