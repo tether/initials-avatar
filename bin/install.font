@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+[ -z "$1" ] && echo "Font family and weights required. Ex.: Open+Sans:300,400" && exit 1
+
+mkdir -p .fonts
+
+curl -s http://fonts.googleapis.com/css?family=$1 | \
+perl -n -e'/local\('\''([^\)]+)'\''\), url\(([^\)]+)\)/ && print "curl -s $2 -o \".fonts/$1.ttf\"\n"' | \
+xargs -L1 -I {} -t sh -c "eval {}"
