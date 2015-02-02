@@ -6,7 +6,7 @@ module.exports = function toPng (initials, backgroundColor, foregroundColor, opt
     height: options.height || 200,
     fontWeight: options.fontWeight || 100,
     fontSize: options.fontSize || null,
-    fontFamily: options.fontFamily || "'LatoHairline', 'LatoRegular', 'HelveticaNeue'",
+    fontFamily: options.fontFamily || 'RobotoLight',
     density: options.density || 1
   };
 
