@@ -2,5 +2,6 @@
 
 var config = require('config');
 require('express')()
+  .use(require('serve-favicon')(__dirname + '/../public/favicon.ico'))
   .use('/', require('../app'))
   .listen(config.port, function () { console.log('👍  Running…'); });
