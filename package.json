@@ -1,13 +1,16 @@
 {
-  "name": "initials.avatar",
+  "name": "initials-avatar",
   "version": "1.0.0",
-  "description": "",
+  "description": "Initials Avatar Generator",
   "main": "bin/server",
   "scripts": {
     "postinstall": "cat fonts.txt | xargs -L1 -P16 ./bin/install.font"
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": "^0.10.36"
+  },
+  "author": "PetroFeed Inc.",
+  "license": "CC-BY-SA-3.0",
   "dependencies": {
     "canvas": "1.1.6",
     "color": "^0.7.3",
