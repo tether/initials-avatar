@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
+var express = require('express');
 var config = require('config');
-require('express')()
+
+express()
+  .use(express.static('public'))
   .use(require('serve-favicon')(__dirname + '/../public/favicon.ico'))
   .use('/', require('../app'))
   .listen(config.port, function () { console.log('👍  Running…'); });

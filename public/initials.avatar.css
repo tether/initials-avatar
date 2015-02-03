@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,700,400);
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+
+* { box-sizing: border-box; }
+
+html {
+  font-family: 'Roboto';
+  font-weight: 100;
+  color: white;
+}
+
+label {
+  display: block;
+}
+
+input {
+  font-family: 'Rock Salt';
+  font-size: 1.5em;
+  padding: 12px;
+  outline: none;
+  border: 1px solid rgba(50, 50, 50, 0.1);
+  width: 100%;
+}
+
+input:hover {
+  border-color: rgb(255,191,0);
+}
+
+input:focus {
+  border-color: #B4D455;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: white;
+  background-image: url(https://ununsplash.imgix.net/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg);
+  background-size: cover;
+}
+
+header,
+footer,
+main {
+  padding: 24px 15%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+header .brand {
+  flex-grow: 1;
+  font-size: 1.75em;
+}
+
+header nav li {
+  display: inline;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
+  color: rgb(255,191,0);
+}
+
+header a:active {
+  color: #B4D455;
+}
+
+.brand img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 1;
+  color: #22313F;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #7f8c8d;
+  box-shadow: inset 0 3px 3px -3px rgb(50, 50, 50);
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  flex-grow: 1;
+}
+
+footer img {
+  width: 3em;
+  height: 3em;
+}
+
+form[name="avatar-details"],
+.media {
+  padding: 24px;
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  align-self: center;
+}
+
+.media img {
+  width: 64px;
+  height: 64px;
+  border-radius: 2px;
+  float: left;
+}
+
+.media h1,
+  .media p {
+  margin-left: calc(64px + 24px);
+}
+
+.media h1 {
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
+
+.media p {
+  text-align: justify;
+}

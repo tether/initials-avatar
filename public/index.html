@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PetroFeed — Initials Avatar</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="/initials.avatar.css">
+</head>
+<body>
+  <header>
+    <h1 class="brand">
+      <a href="/">
+        <img src="/Initials%20Avatar?width=32&height=32" alt="PetroFeed Initials Avatar Generator">
+        PetroFeed Initials Avatar Generator
+      </a>
+    </h1>
+    <nav>
+      <li><a href="https://petrofeed.com">PetroFeed</a></li>
+      <li><a href="https://github.com/petrofeed">GitHub</a></li>
+    </nav>
+  </header>
+
+  <main ng:app>
+    <form name="avatar-details">
+      <label for="name">Name:</label>
+      <input type="text" placeholder="John Doe" name="name" required autofocus ng:model="name" ng:init="name='John Doe'">
+    </form>
+
+    <article class="media" ng:show="name">
+      <img ng:src="/{{ name }}">
+      <h1>{{ name }}</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae atque temporibus natus recusandae modi expedita aliquam consectetur rem, similique esse fugiat quaerat ad nam aut sunt itaque? Nobis perspiciatis, cum.Voluptatibus, magnam, qui. Similique quis tenetur repudiandae, non. Esse consectetur cupiditate, voluptatum eligendi accusamus ad recusandae molestias dolorem rem quibusdam maxime ex fugit soluta dignissimos doloremque incidunt, ullam, voluptatibus suscipit.Nam nobis aliquam incidunt. Sed ut pariatur voluptate veritatis delectus molestiae porro id error neque, iure architecto voluptates consequatur vitae nam debitis, alias assumenda reprehenderit accusamus eum labore excepturi praesentium?Hic consequuntur velit, harum iure error minus, officiis explicabo, ea eaque nihil quos nostrum laboriosam temporibus commodi dolores enim doloremque consectetur dolorem quia, deleniti optio quas distinctio incidunt. Aspernatur, consectetur.Exercitationem eos quidem accusamus laboriosam a consequuntur, autem, facere accusantium unde ea necessitatibus cumque debitis, quaerat distinctio.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Proudly brought to you by <a href="https://petrofeed.com" target="_blank">PetroFeed</a>.</p>
+    <img src="https://camo.githubusercontent.com/8cc4516e516599ab75bddc870f6a3691803b7d01/68747470733a2f2f7777772e706574726f666565642e636f6d2f696d672f636f6d70616e792f706564726f2e706e67" alt="Pedro">
+
+    <div class="github-fork-ribbon-wrapper right-bottom">
+      <div class="github-fork-ribbon">
+        <a href="https://github.com/petrofeed/initials-avatar">Fork me on GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
