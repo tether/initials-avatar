@@ -16,7 +16,6 @@
     "color": "^0.7.3",
     "config": "^1.10.0",
     "express": "^4.11.2",
-    "initials": "^0.2.3",
     "serve-favicon": "^2.2.0"
   }
 }

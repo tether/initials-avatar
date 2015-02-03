@@ -1,7 +1,7 @@
 var express = require('express');
 var app = module.exports = express();
 
-var toInitials = require('initials');
+var toInitials = require('./initials');
 var toHexColor = require('./string.to.hex');
 var Avatar = require('./avatar');
 var Color = require('color');
