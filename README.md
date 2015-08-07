@@ -7,7 +7,7 @@ PetroFeed Initials Avatar Generator.
 
 1. Clone this repository and `cd` into it;
 2. Run `./bin/server` to get your local server running.
-3. Hit `http://localhost:3000/John+Doe` and you should get a nice little avatar.
+3. Hit `http://localhost:3000/John%20Doe` and you should get a nice little avatar.
 
 ## License
 **Creative Commons 3.0 - Attribution Sharealike**
